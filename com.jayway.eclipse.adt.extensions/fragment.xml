@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<fragment>
+
+   <extension
+         point="org.eclipse.ui.newWizards">
+   
+      <wizard
+            canFinishEarly="false"
+            category="com.android.ide.eclipse.wizards.category"
+            class="com.jayway.eclipse.adt.extensions.ui.wizards.NewActivityWizard"
+            finalPerspective="org.eclipse.jdt.ui.JavaPerspective"
+            id="com.jayway.eclipse.adt.extensions.ui.wizards.NewActivityWizard"
+            name="Android Activity"
+            icon="res/activity-16x16.jpg"
+            preferredPerspectives="org.eclipse.jdt.ui.JavaPerspective"
+            project="false">
+      </wizard>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.jdt.ui.JavaPerspective">
+            <newWizardShortcut
+               id="com.jayway.eclipse.adt.extensions.ui.wizards.NewActivityWizard" />
+      </perspectiveExtension>
+   </extension>
+   
+
+</fragment>

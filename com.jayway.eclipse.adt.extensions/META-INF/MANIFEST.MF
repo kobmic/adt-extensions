@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Extensions
+Bundle-SymbolicName: com.jayway.eclipse.adt.extensions;singleton:=true
+Bundle-Version: 0.0.1.qualifier
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.ui.ide;bundle-version="3.5.1",
+ org.eclipse.jdt.core;bundle-version="3.5.1",
+ com.android.ide.eclipse.adt,
+ org.eclipse.core.resources;bundle-version="3.5.1",
+ com.jayway.eclipse.adt.xml;bundle-version="0.0.1",
+ scala.library;bundle-version="2.7.7"
+Fragment-Host: org.eclipse.jdt.ui;bundle-version="3.5.1"
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
