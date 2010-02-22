@@ -1,0 +1,14 @@
+ADT extensions
+
+eclipse plugin that provides a "New Android Activity Wizard" for Android development.
+
+Installation:
+
+Download one of 
+  com.jayway.eclipse.adt.extensions-with-scala-dep.zip (use if you don't have installed eclipse scala ide, or scala lib as bundle)
+or 
+  com.jayway.eclipse.adt.extensions.zip (without scala library)
+
+In eclipse Galileo choose "Help -> Install new Software... -> Add.. -> Archive ..." and select the downloaded archive and add a name for the update site. Select ADT Extensions (you might have to uncheck "Group items by category") and install.
+
+Have fun!
