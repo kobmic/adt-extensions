@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.jayway.eclipse.adt.extensions.feature_0.0.1.201002212140.jar" id="com.jayway.eclipse.adt.extensions.feature" version="0.0.1.201002212140">
+      <category name="com.jayway.eclipse.adt.extensions"/>
+   </feature>
+   <category-def name="com.jayway.eclipse.adt.extensions" label="com.jayway.eclipse.adt.extensions"/>
+</site>

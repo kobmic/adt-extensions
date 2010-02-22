@@ -1,0 +1,43 @@
+group = 'com.jayway'
+version = '0.0.1'
+
+usePlugin 'scala'
+usePlugin 'java'
+usePlugin 'osgi'
+    
+
+repositories {
+  mavenCentral()
+  mavenRepo(urls: 'http://scala-tools.org/repo-snapshots/')
+  mavenRepo(urls: 'http://scala-tools.org/repo-releases/')
+  //mavenRepo(urls: 'http://repository.jboss.org/maven2/')
+  mavenRepo(urls: 'file:///C:/"Documents and Settings"/"Michael Kober"/.m2/repository/') 
+}
+
+dependencies {
+    // Libraries needed to run the scala tools
+    //scalaTools 'org.scala-lang:scala-compiler:2.8.0-SNAPSHOT'
+    //scalaTools 'org.scala-lang:scala-library:2.8.0-SNAPSHOT'
+
+	scalaTools 'org.scala-lang:scala-compiler:2.7.7'
+    scalaTools 'org.scala-lang:scala-library:2.7.7'
+
+    //compile 'org.scala-lang:scala-library:2.8.0-SNAPSHOT'
+    compile 'org.scala-lang:scala-library:2.7.7'
+    //compile 'org.eclipse:osgi:3.5.1-R35x_v20090827' 
+    compile 'org.apache.felix:org.apache.felix.framework:2.0.1'
+}
+
+configure(jar.osgi) {
+    version = '0.0.1'
+    name = 'Extensions for ADT'
+    symbolicName = 'com.jayway.eclipse.adt.xml'
+    instruction 'Require-Bundle', 'scala.library'
+    instruction 'Import-Package', 'org.osgi.framework'
+    instruction 'Export-Package', 'com.jayway.eclipse.adt.xml'
+    instruction 'Bundle-Vendor', 'JAYWAY AB'
+}
+
+
+
+

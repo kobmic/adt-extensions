@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: com.jayway.eclipse.adt.xml
+Bundle-SymbolicName: com.jayway.eclipse.adt.xml
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: JAYWAY
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: scala.library;bundle-version="2.7.6"
+Export-Package: com.jayway.eclipse.adt.xml
+Import-Package: org.osgi.framework;version="1.5.0"
