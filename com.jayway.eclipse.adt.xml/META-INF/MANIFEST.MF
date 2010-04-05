@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: com.jayway.eclipse.adt.xml
 Bundle-SymbolicName: com.jayway.eclipse.adt.xml
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 0.1.0.qualifier
 Bundle-Vendor: JAYWAY
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Require-Bundle: scala.library;bundle-version="2.7.6"

@@ -147,8 +147,8 @@ public class NewActivityWizardPage extends NewTypeWizardPage {
 		Dialog.applyDialogFont(composite);
 		
 		IntentReflectionHelper helper = new IntentReflectionHelper(javaProject);
-		createIntentActionsControl(composite, nColumns, helper.getCategories());
-		createIntentCategoriesControl(composite, nColumns, helper.getActions());
+		createIntentActionsControl(composite, nColumns, helper.getActions());
+		createIntentCategoriesControl(composite, nColumns, helper.getCategories());
 	}
 	
 

@@ -20,14 +20,14 @@ class AndroidManifest(fileName : String) {
    * @param intentCategories List of intent categories, may be empty
    */
   def createXML(activityName: String, intentActions: List[String], intentCategories: List[String]) : Node = {
-		val xml =
-<activity android:name={activityName}>
-  <intent-filter>
-	{for(action <- intentActions) yield {<action android:name={action} />}}
-	{for(category <- intentCategories) yield {<category android:name={category} />}}
-  </intent-filter>
-</activity>
-		xml
+	val xml =
+      <activity android:name={activityName}>
+        <intent-filter>
+	      {for(action <- intentActions) yield {<action android:name={action} />}}
+	      {for(category <- intentCategories) yield {<category android:name={category} />}}
+        </intent-filter>
+      </activity>
+	xml
   }
   
   /**
@@ -37,7 +37,7 @@ class AndroidManifest(fileName : String) {
    * @param intentCategories Array of intent categories, may be empty
    */
   def createXML(activityName: String, intentActions: Array[String], intentCategories: Array[String]) : Node = {
-		createXML(activityName, List.fromArray(intentActions), List.fromArray(intentCategories))
+	createXML(activityName, List.fromArray(intentActions), List.fromArray(intentCategories))
   }
   
   /**
@@ -72,7 +72,7 @@ class AndroidManifest(fileName : String) {
    */
   def insertActivity(activity : Node) : Node = {
     val xml = loadXML()
-    val sb : StringBuilder = new StringBuilder(xml.toString) 
+    val sb = new StringBuilder(xml.toString) 
     val index = sb.toString.lastIndexOf("</application>")
     sb.insert(index, activity.toString)
     current = XML.loadString(sb.toString)
@@ -97,7 +97,7 @@ class AndroidManifest(fileName : String) {
   * @param intentCategories intent categories
   */
   def addActivity(activityName: String, intentActions: Array[String], intentCategories: Array[String]) : Node = {
-		addActivity(activityName, List.fromArray(intentActions), List.fromArray(intentCategories))
+    addActivity(activityName, List.fromArray(intentActions), List.fromArray(intentCategories))
   }
   
  /**

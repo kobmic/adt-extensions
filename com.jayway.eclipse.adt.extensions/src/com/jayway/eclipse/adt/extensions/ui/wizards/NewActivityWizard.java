@@ -27,6 +27,7 @@ import org.eclipse.jdt.core.IJavaElement;
 import org.eclipse.jdt.core.IJavaProject;
 import org.eclipse.jdt.internal.ui.wizards.NewElementWizard;
 import org.eclipse.jface.dialogs.ErrorDialog;
+import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.ui.IWorkbench;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
@@ -51,7 +52,7 @@ public class NewActivityWizard extends NewElementWizard {
     public NewActivityWizard() {
         setWindowTitle("New Android Activity");
         setDefaultPageImageDescriptor(AbstractUIPlugin.imageDescriptorFromPlugin(ImageConstants.ID,
-            ImageConstants.LARGE_ACTIVITY_ICON));
+                ImageConstants.LARGE_ACTIVITY_ICON));
         newActivityPage = new NewActivityWizardPage();
     }
 

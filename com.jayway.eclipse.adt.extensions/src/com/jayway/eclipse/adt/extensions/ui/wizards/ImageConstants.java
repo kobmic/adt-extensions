@@ -22,7 +22,7 @@ package com.jayway.eclipse.adt.extensions.ui.wizards;
 public interface ImageConstants {
 
     /** ID for plugin. */
-    String ID = "org.androidtools.eclipse.adt.extensions";
+    String ID = "com.jayway.eclipse.adt.extensions";
 
     /** File location of the small icon. */
     String SMALL_ACTIVITY_ICON = "res/activity-16x16.jpg";
